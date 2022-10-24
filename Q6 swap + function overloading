@@ -1,0 +1,39 @@
+#include <iostream> 
+using namespace std ; 
+ 
+class swapp 
+ {  int x , y  ; 
+public  :  
+   int swap ()
+    {  cout<<"enter number 1";
+    cin>>x ;  
+    cout <<"enter number 2 ";
+    cin>>y  ; 
+        cout <<  " original "<<endl << x<<" "<<y ;  
+        int temp  ;  
+     temp   = x ; 
+     x = y  ; 
+      y = temp  ; 
+      cout << " new "<<endl<<x << "  "<<y ; 
+    return 0  ;  
+    }   
+      int swap  (int z )
+       { cout<<"enter number 1 " ;  
+       cin >> x ;  
+           cout<<endl <<"original "<<endl << x<< " "<<z <<endl  ;  
+            int temp  ;  
+             temp=z  ;  
+             z=x ; 
+             x=temp  ;  
+              cout <<endl <<"new "<< endl << x << "  "<< z ; 
+               return 0  ; 
+       } 
+       
+ }; 
+  int main  ()  
+   {  swapp A ; 
+    A.swap () ; 
+    cout<<endl<<endl ; 
+     A.swap (5);
+     return 0 ;  
+   }
