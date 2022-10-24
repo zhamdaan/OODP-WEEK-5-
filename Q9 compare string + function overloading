@@ -1,0 +1,37 @@
+#include <iostream> 
+#include <string>
+#include <cstring>
+using namespace std ; 
+ 
+class comp 
+ {  string A , B  ; 
+ public  :   
+   int compare  ( )
+    {  cout<<"enter string 1 "<<endl  ;  
+      cin >> A ;  
+       cout<<"enter string 2 "<<endl ;  
+        cin>>  B  ;  
+      if ( A.compare (B)== 0) 
+         { cout<<"both strings are the same  "<<endl ; }  
+         else 
+            {  cout<<"both strings are not the same " <<endl;  }   
+    return  0  ;  
+    }  
+      int compare (string  k )
+        {  cout << "enter string 1 " <<endl  ;  
+              cin>>A  ; 
+              if ( A.compare (k)== 0) 
+         { cout<<"both strings are the same  "<<endl ; }  
+         else 
+            {  cout<<"both strings are not the same " ;  }   
+    return  0  ;  
+        } 
+ } ;  
+ 
+ int main  ()  
+  {   comp A  ;  
+   A.compare () ;  
+    cout<<endl ;  
+    A.compare ("cat"); 
+       return 0  ; 
+  }  
