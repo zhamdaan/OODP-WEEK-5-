@@ -1,0 +1,24 @@
+#include<iostream> 
+#include <string> 
+using namespace std ;
+
+class student 
+{ string name ;
+public : 
+student () {} 
+student (string N)
+{ name = N  ;  } 
+int pdt ()
+{ if (name.empty ())
+cout<<"unknown ";
+else 
+    cout<<name  ;  
+  return 0  ;  
+} 
+~student ( )  { } 
+} ;
+int main () 
+{ student k; 
+ k.pdt () ; 
+return 0  ; 
+} 
