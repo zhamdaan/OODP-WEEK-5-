@@ -1,0 +1,27 @@
+#include<iostream> 
+using namespace std ; 
+ 
+class parea 
+ { int x, y ;  
+   public :  
+  int printarea (int a )  
+    {  x=a  ;  
+       cout<<"area of the square is "<<x*x ; 
+    return 0  ;  
+    }  
+     int printarea ( int a , int b )
+      { x=a  ; 
+         y = b   ;   
+           cout <<"the area of the square is "<<x*y   ;   
+           
+            return  0  ; 
+      } 
+      
+ } ; 
+ int main   ( ) 
+ {  parea A  , B ;
+ A.printarea (5)  ; 
+ cout <<endl ;  
+ B.printarea (10,5) ; 
+ return 0   ; 
+ } 
